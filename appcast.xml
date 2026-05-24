@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <channel>
+        <title>Fire (Ice fork) — Updates</title>
+        <description>Sparkle update feed for the Fire maintained fork of jordanbaird/Ice. Releases published here flow into the in-app "Check for Updates" dialog.</description>
+        <language>en</language>
+        <link>https://pdurlej.github.io/fire-releases/</link>
+        <!--
+          New <item> blocks are appended by the build-dmg.yml workflow on
+          pdurlej/Ice after a successful tagged build. Each item carries
+          the EdDSA signature produced by `sign_update`. The matching
+          public key lives in Ice/Resources/Info.plist (SUPublicEDKey).
+        -->
+    </channel>
+</rss>
