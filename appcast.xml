@@ -11,5 +11,18 @@
           the EdDSA signature produced by `sign_update`. The matching
           public key lives in Ice/Resources/Info.plist (SUPublicEDKey).
         -->
+            <item>
+            <title>0.11.13-fire.1</title>
+            <pubDate>niedz., 24 maj 2026 19:10:24 +0000</pubDate>
+            <sparkle:version>1123</sparkle:version>
+            <sparkle:shortVersionString>0.11.13-fire.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:releaseNotesLink>https://github.com/pdurlej/Ice/releases/tag/v0.11.13-fire.1</sparkle:releaseNotesLink>
+            <enclosure
+                url="https://github.com/pdurlej/Ice/releases/download/v0.11.13-fire.1/Ice-v0.11.13-fire.1.dmg"
+                sparkle:edSignature="q5PDZLpR96lWW3gkUdda1Sa9shfAsSmgL6qhga+waueeFiLT5XAcrX6rTEDthX8AWv+X73B9+2XZM1ftIcxaDg=="
+                length="4198789"
+                type="application/octet-stream" />
+        </item>
     </channel>
 </rss>
