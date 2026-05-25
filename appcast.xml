@@ -24,5 +24,18 @@
                 length="4198789"
                 type="application/octet-stream" />
         </item>
+            <item>
+            <title>0.11.13-fire.4</title>
+            <pubDate>Mon, 25 May 2026 20:56:08 +0000</pubDate>
+            <sparkle:version>1126</sparkle:version>
+            <sparkle:shortVersionString>0.11.13-fire.4</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:releaseNotesLink>https://github.com/pdurlej/Ice/releases/tag/v0.11.13-fire.4</sparkle:releaseNotesLink>
+            <enclosure
+                url="https://github.com/pdurlej/Ice/releases/download/v0.11.13-fire.4/Ice-v0.11.13-fire.4.dmg"
+                sparkle:edSignature="mDK0BUt9SsH7tum6GiqsfK5nVKsEDHFC2K10SuS+009yvhPpXnt3hnHKHuCSgkq14d9kYcr/wzpSBxTSBgmaAQ=="
+                length="4283331"
+                type="application/octet-stream" />
+        </item>
     </channel>
 </rss>
