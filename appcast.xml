@@ -89,5 +89,18 @@
                 length="8510719"
                 type="application/octet-stream" />
         </item>
+            <item>
+            <title>0.11.13-fire.8</title>
+            <pubDate>Tue, 26 May 2026 20:01:30 +0000</pubDate>
+            <sparkle:version>1131</sparkle:version>
+            <sparkle:shortVersionString>0.11.13-fire.8</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:releaseNotesLink>https://github.com/pdurlej/Ice/releases/tag/v0.11.13-fire.8</sparkle:releaseNotesLink>
+            <enclosure
+                url="https://github.com/pdurlej/Ice/releases/download/v0.11.13-fire.8/Ice-v0.11.13-fire.8.dmg"
+                sparkle:edSignature="dJW/eJp3W6kV7g315AWo1WLM7p4VE1QeL4maze4zWmGXtqMxNFAyEuIxFW/GqFD8FPJcTalWBa8h2Fyz1dvKBg=="
+                length="8849275"
+                type="application/octet-stream" />
+        </item>
     </channel>
 </rss>
