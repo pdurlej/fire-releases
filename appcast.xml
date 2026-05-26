@@ -50,5 +50,18 @@
                 length="5885158"
                 type="application/octet-stream" />
         </item>
+            <item>
+            <title>0.11.13-fire.6</title>
+            <pubDate>Tue, 26 May 2026 06:41:26 +0000</pubDate>
+            <sparkle:version>1128</sparkle:version>
+            <sparkle:shortVersionString>0.11.13-fire.6</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:releaseNotesLink>https://github.com/pdurlej/Ice/releases/tag/v0.11.13-fire.6</sparkle:releaseNotesLink>
+            <enclosure
+                url="https://github.com/pdurlej/Ice/releases/download/v0.11.13-fire.6/Ice-v0.11.13-fire.6.dmg"
+                sparkle:edSignature="A+BIZcVGyBcupdPg3Fkhj/B5pR+UjUstOi9A9m+Rk7ZVyacSk822Qt7mGt+B58o8q8w6Pc6LTTdt5o7OPBydBw=="
+                length="8496147"
+                type="application/octet-stream" />
+        </item>
     </channel>
 </rss>
