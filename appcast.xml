@@ -10,6 +10,13 @@
           pdurlej/Ice after a successful tagged build. Each item carries
           the EdDSA signature produced by `sign_update`. The matching
           public key lives in Ice/Resources/Info.plist (SUPublicEDKey).
+
+          For release notes, use a <description><![CDATA[<html>...</html>]]></description>
+          block — Sparkle renders the HTML inline in the update dialog.
+          If you use <sparkle:releaseNotesLink> instead, Sparkle embeds
+          the linked URL in a WebView, and GitHub release pages render
+          with their full chrome (Sign in, repo nav, etc.) which looks
+          like ass. Don't do that.
         -->
             <item>
             <title>0.11.13-fire.1</title>
@@ -95,7 +102,22 @@
             <sparkle:version>1131</sparkle:version>
             <sparkle:shortVersionString>0.11.13-fire.8</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:releaseNotesLink>https://github.com/pdurlej/Ice/releases/tag/v0.11.13-fire.8</sparkle:releaseNotesLink>
+            <description><![CDATA[
+                <h2>fire.8 — AI can now move menu bar items</h2>
+                <p>First fire build where AI assistants can actually rearrange the menu bar, not just read it.</p>
+                <h3>What's new</h3>
+                <ul>
+                    <li><strong>Real write ops via MCP</strong>: <code>move_item</code>, <code>hide_item</code>, <code>show_item</code>, <code>apply_layout</code> now post real CGEvent drags. AI moves items between sections like you would by hand.</li>
+                    <li><strong>New MCPBackend.xpc</strong> service handles writes; existing MenuBarItemService.xpc stays for sourcePID lookups.</li>
+                    <li><strong>Lean Mover.swift</strong> (~530 lines): faithful port of upstream Ice's CGEvent drag pipeline. Same three-EventTap synchronization dance, decoupled from AppState.</li>
+                    <li><strong>SourcePIDCache shared</strong> across XPC services so macOS 26 Control Center reparenting resolves correctly (no more bundle IDs collapsing to com.apple.controlcenter).</li>
+                </ul>
+                <h3>From fire.7.1 (included)</h3>
+                <ul><li><code>list_layouts</code> MCP tool — AI can ask "what layouts has the user saved?" without trial-and-error.</li></ul>
+                <h3>From fire.7 (included)</h3>
+                <ul><li>Multi-display support in <code>list_items</code> — iterates all active displays, picks the right Ice control items per display.</li></ul>
+                <p><a href="https://github.com/pdurlej/Ice/releases/tag/v0.11.13-fire.8">Full release notes on GitHub</a></p>
+            ]]></description>
             <enclosure
                 url="https://github.com/pdurlej/Ice/releases/download/v0.11.13-fire.8/Ice-v0.11.13-fire.8.dmg"
                 sparkle:edSignature="dJW/eJp3W6kV7g315AWo1WLM7p4VE1QeL4maze4zWmGXtqMxNFAyEuIxFW/GqFD8FPJcTalWBa8h2Fyz1dvKBg=="
