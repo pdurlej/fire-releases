@@ -124,5 +124,30 @@
                 length="8849275"
                 type="application/octet-stream" />
         </item>
+            <item>
+            <title>0.11.13-fire.8.1</title>
+            <pubDate>Fri, 29 May 2026 08:17:00 +0000</pubDate>
+            <sparkle:version>1132</sparkle:version>
+            <sparkle:shortVersionString>0.11.13-fire.8.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>fire.8.1 — moves now work on macOS 26</h2>
+                <p>Hotfix on top of fire.8. The wire plumbing shipped in fire.8 was correct, but a live smoke test through Claude Code uncovered two bugs that kept moves from actually landing on macOS 26.</p>
+                <h3>Fixes</h3>
+                <ul>
+                    <li><strong>Real bundle IDs in <code>list_items</code></strong>: <code>SourcePIDCache</code> was never started in MCPBackend.xpc, so every item resolved as <code>com.apple.controlcenter</code> on macOS 26 Control Center reparenting. Now resolved correctly.</li>
+                    <li><strong>Section detection works</strong>: Ice's three control items live in NSStatusBar and are NOT separate CG windows, so the section algorithm always fell through to "everything is alwaysVisible". Ice main app now publishes its section-divider X positions to its plist, and MCPBackend reads them as section boundaries.</li>
+                    <li><strong>Apple widgets stay Apple's</strong>: Control Center widgets (BentoBox, Clock, FaceTime, MusicRecognition, AudioVideoModule) are now identified by their stable window titles, so moves that land them next to Ice's section divider still classify correctly.</li>
+                    <li><strong>XPC service displays</strong>: <code>CGGetActiveDisplayList</code> sometimes returns zero displays from an XPC service with no graphics connection; falls back to the main display so list/move still work.</li>
+                </ul>
+                <p>Live verified: a Claude Code session ran <code>list_items</code> (returned 21 real items grouped by section), then <code>move_item bundle_id=com.electron.ollama to_section=alwaysVisible</code> physically slid the item to the rightmost slot — confirmed by the next <code>list_items</code> showing ollama at <code>pos=19</code>.</p>
+                <p><a href="https://github.com/pdurlej/Ice/releases/tag/v0.11.13-fire.8.1">Full release notes on GitHub</a></p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/pdurlej/Ice/releases/download/v0.11.13-fire.8.1/Ice-v0.11.13-fire.8.1.dmg"
+                sparkle:edSignature="/zfEdJ4D3UcBYf8Mfk7nlV2QgPBQwR/q7/8reONdsxP+2xvErxop4oAEUacJJid+63uH96UgC4UtzljmtVjQAg=="
+                length="8858516"
+                type="application/octet-stream" />
+        </item>
     </channel>
 </rss>
