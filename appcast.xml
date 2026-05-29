@@ -173,5 +173,33 @@
                 length="8822825"
                 type="application/octet-stream" />
         </item>
+            <item>
+            <title>0.11.13-fire.9</title>
+            <pubDate>Fri, 29 May 2026 12:30:00 +0000</pubDate>
+            <sparkle:version>1136</sparkle:version>
+            <sparkle:shortVersionString>0.11.13-fire.9</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>fire.9 — AI Quotas in the menu bar</h2>
+                <p>Fire is a menu-bar manager for AI-heavy Macs. fire.9 adds <strong>AI Quotas</strong>: an optional menu-bar readout of how much usage you have left across Codex, Claude, Gemini, and Ollama, plus reset times.</p>
+                <p>Combined menu-bar item, e.g.:</p>
+                <p><code>AI Cx99 Cl81 Gm? Ol100</code></p>
+                <p>The dropdown breaks each provider down into session and weekly windows with reset times. A provider that can't be read shows <code>?</code>.</p>
+                <h3>Details</h3>
+                <ul>
+                    <li><strong>Off by default.</strong> Enable it in Settings → Advanced → AI Quotas.</li>
+                    <li><strong>Local-only.</strong> Usage is read via your local CodexBar CLI installation; quota data never leaves your Mac (not sent to Sentry or MCP).</li>
+                    <li><strong>One menu-bar item</strong> with a stable position; refreshes every 5 minutes, or on demand from the dropdown.</li>
+                    <li>Needs the <a href="https://github.com/Asummon/codexbar">CodexBar CLI</a> installed (auto-detected, or set a custom path in settings).</li>
+                </ul>
+                <p>Also includes the fire.8.x menu-bar write bridge: AI assistants can move and hide items across every section via MCP.</p>
+                <p><a href="https://github.com/pdurlej/Ice/releases/tag/v0.11.13-fire.9">Full release notes on GitHub</a></p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/pdurlej/Ice/releases/download/v0.11.13-fire.9/Ice-v0.11.13-fire.9.dmg"
+                sparkle:edSignature="DJJZc3vE7GNucYzqrgUU928EeO059+mzLryZr+rZLoKpHRcdzj5LT8vJW7/gayjFvcOe0CH9rqqgrGsWQZgCBQ=="
+                length="8927083"
+                type="application/octet-stream" />
+        </item>
     </channel>
 </rss>
