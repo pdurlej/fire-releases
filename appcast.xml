@@ -315,5 +315,29 @@
                 length="8960943"
                 type="application/octet-stream" />
         </item>
+            <item>
+            <title>0.11.13-fire.9.8</title>
+            <pubDate>Fri, 29 May 2026 22:11:53 +0000</pubDate>
+            <sparkle:version>1144</sparkle:version>
+            <sparkle:shortVersionString>0.11.13-fire.9.8</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>fire.9.8 — AI menu-bar changes now ask first</h2>
+                <p>When an AI assistant (via the MCP server) asks Fire to move, hide, or show a menu bar item, Fire now asks you to approve it first — using its own prompt, since Fire is the app that actually holds Accessibility permission:</p>
+                <p>&nbsp;&nbsp;<strong>Deny&nbsp;&nbsp;·&nbsp;&nbsp;Allow Once&nbsp;&nbsp;·&nbsp;&nbsp;Allow for 5 Minutes</strong></p>
+                <ul>
+                    <li>"Allow for 5 Minutes" lets a burst of changes (like applying a saved layout) through without re-prompting.</li>
+                    <li>Closes a confused-deputy gap: previously any local process could trigger a privileged menu-bar change by dropping a command file. Now the file channel is just a request queue — approval happens in Fire.</li>
+                    <li>Channel hardening: owner-only files, tighter staleness window, symlink/cross-user guards.</li>
+                </ul>
+                <p>MCP server is still off by default and local-only.</p>
+                <p><a href="https://github.com/pdurlej/Ice/releases/tag/v0.11.13-fire.9.8">Full release notes on GitHub</a></p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/pdurlej/Ice/releases/download/v0.11.13-fire.9.8/Ice-v0.11.13-fire.9.8.dmg"
+                sparkle:edSignature="SdvVxwSwpFEICb0c0dasyw7AsLF+Yo/DP9TpAfANxP2NX1n5BvVqh3o1mOHyNJJ0M7RZw5Tk3HYo0RExvZVOBg=="
+                length="8974291"
+                type="application/octet-stream" />
+        </item>
     </channel>
 </rss>
