@@ -149,5 +149,29 @@
                 length="8858516"
                 type="application/octet-stream" />
         </item>
+            <item>
+            <title>0.11.13-fire.8.4</title>
+            <pubDate>Fri, 29 May 2026 11:50:00 +0000</pubDate>
+            <sparkle:version>1135</sparkle:version>
+            <sparkle:shortVersionString>0.11.13-fire.8.4</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>fire.8.4 — AI can hide menu bar items into any section</h2>
+                <p>The big one: AI assistants can now move items into the Hidden and Always-Hidden sections, not just rearrange the visible row. <code>hide_item</code>, <code>show_item</code>, <code>move_item</code>, and <code>apply_layout</code> all work across every section.</p>
+                <h3>What changed</h3>
+                <ul>
+                    <li><strong>Ice-performs-writes bridge</strong>: moving an item into a collapsed/empty section can't be done from the MCP helper process by coordinate dragging (the section's divider is parked off-screen). Write operations are now delegated to the Ice app itself via a local file channel, so they use the exact code path Ice's own Layout editor uses — which reaches every section.</li>
+                    <li><strong>Off-screen dividers found correctly</strong>: control items are located via the same active-space enumeration Ice's editor uses, so an empty Hidden section is a valid drop target.</li>
+                </ul>
+                <p>Live verified end-to-end via Claude Code: <code>hide_item</code> moved Ollama from the visible row into the (empty) Hidden section — it vanished from the menu bar — and <code>show_item</code> brought it straight back.</p>
+                <p>Local-only: writes go through a file on your Mac, never the network.</p>
+                <p><a href="https://github.com/pdurlej/Ice/releases/tag/v0.11.13-fire.8.4">Full release notes on GitHub</a></p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/pdurlej/Ice/releases/download/v0.11.13-fire.8.4/Ice-v0.11.13-fire.8.4.dmg"
+                sparkle:edSignature="53yRyKwcyPv2PW5I5yg+Q74I5Jv1O9mV+urXWK492tY/GUllABZrj/FcDJ0dWRMnvdFSyo+1SwtTlxqmX/51CA=="
+                length="8822825"
+                type="application/octet-stream" />
+        </item>
     </channel>
 </rss>
