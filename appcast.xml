@@ -268,5 +268,30 @@
                 length="8958457"
                 type="application/octet-stream" />
         </item>
+            <item>
+            <title>0.11.13-fire.9.6</title>
+            <pubDate>Fri, 29 May 2026 17:05:37 +0000</pubDate>
+            <sparkle:version>1142</sparkle:version>
+            <sparkle:shortVersionString>0.11.13-fire.9.6</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>fire.9.6 — AI Quotas shows what's left, not what's used</h2>
+                <p>The menu-bar readout now shows how much of each provider's weekly quota you have <em>remaining</em>, instead of how much you have already used:</p>
+                <p>&nbsp;&nbsp;[Codex] 78%&nbsp;&nbsp;[Claude] 89%&nbsp;&nbsp;[Antigravity] 100%&nbsp;&nbsp;[Ollama] 57%</p>
+                <ul>
+                    <li>A high number now means plenty of headroom; a small red number means you are almost out.</li>
+                    <li>Antigravity at full quota reads "100%" instead of a confusing "0%".</li>
+                    <li>Color thresholds unchanged: orange under 20% left, red under 10%.</li>
+                    <li>Now matches the dropdown, which already lists "X% left" per window.</li>
+                </ul>
+                <p>Still off by default, still local-only.</p>
+                <p><a href="https://github.com/pdurlej/Ice/releases/tag/v0.11.13-fire.9.6">Full release notes on GitHub</a></p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/pdurlej/Ice/releases/download/v0.11.13-fire.9.6/Ice-v0.11.13-fire.9.6.dmg"
+                sparkle:edSignature="5uh+sRSiXo0bjUmhK8lqW+MuIe89xR2jMTPI/Z69YLmo519rWDX22+wx75N6rqEjGXNstT53UhoyGZZ3MDy1Cg=="
+                length="8958738"
+                type="application/octet-stream" />
+        </item>
     </channel>
 </rss>
