@@ -243,5 +243,30 @@
                 length="8954661"
                 type="application/octet-stream" />
         </item>
+            <item>
+            <title>0.11.13-fire.9.5</title>
+            <pubDate>Fri, 29 May 2026 14:50:00 +0000</pubDate>
+            <sparkle:version>1141</sparkle:version>
+            <sparkle:shortVersionString>0.11.13-fire.9.5</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>fire.9.5 — AI Quotas gets brand icons</h2>
+                <p>The AI Quotas readout now shows each provider's logo next to its weekly usage, instead of cryptic two-letter codes:</p>
+                <p>&nbsp;&nbsp;[Codex] 22%&nbsp;&nbsp;[Claude] 11%&nbsp;&nbsp;[Antigravity] 0%&nbsp;&nbsp;[Ollama] 43%</p>
+                <ul>
+                    <li>Per-provider brand icons (from your installed CodexBar app).</li>
+                    <li>Weekly usage percent, color-coded: orange under 20% left, red under 10%.</li>
+                    <li>Dropped the standalone Gemini entry — Antigravity already covers Gemini.</li>
+                    <li>New per-provider toggles in Settings → Advanced → AI Quotas.</li>
+                </ul>
+                <p>Still off by default, still local-only.</p>
+                <p><a href="https://github.com/pdurlej/Ice/releases/tag/v0.11.13-fire.9.5">Full release notes on GitHub</a></p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/pdurlej/Ice/releases/download/v0.11.13-fire.9.5/Ice-v0.11.13-fire.9.5.dmg"
+                sparkle:edSignature="zZystfNpnutZW7IiWSQ3WuwNN78JW0RD9rXKWQYM2WTxoZDYUsF2oYIUoN1jJv6gAdYyhV7SY5EjqnDyG2QHCg=="
+                length="8958457"
+                type="application/octet-stream" />
+        </item>
     </channel>
 </rss>
