@@ -224,5 +224,24 @@
                 length="8953110"
                 type="application/octet-stream" />
         </item>
+            <item>
+            <title>0.11.13-fire.9.4</title>
+            <pubDate>Fri, 29 May 2026 14:25:00 +0000</pubDate>
+            <sparkle:version>1140</sparkle:version>
+            <sparkle:shortVersionString>0.11.13-fire.9.4</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>fire.9.4 — AI Quotas now actually shows in the menu bar</h2>
+                <p>Fixes a real architectural bug: the AI Quotas readout could end up invisible (parked off-screen) because Ice is a menu-bar manager and was treating its own readout like a third-party item to hide.</p>
+                <p>Rebuilt the AI Quotas item as a first-class, always-visible Ice element (same mechanism Ice uses to keep its own icon visible). It now sits reliably in the visible part of the menu bar: <code>AI Cx99 Cl73 Gm? Ag100 Ol100</code>.</p>
+                <p>Still off by default, still local-only.</p>
+                <p><a href="https://github.com/pdurlej/Ice/releases/tag/v0.11.13-fire.9.4">Full release notes on GitHub</a></p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/pdurlej/Ice/releases/download/v0.11.13-fire.9.4/Ice-v0.11.13-fire.9.4.dmg"
+                sparkle:edSignature="sbCD6JxiDwbq9AO1DzXv1gylcPfVrZh9lbO4Kb49qxblm9M2JInkowgd6nf7erEodAegv/5YG/IVlSR5yLB8BQ=="
+                length="8954661"
+                type="application/octet-stream" />
+        </item>
     </channel>
 </rss>
