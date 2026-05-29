@@ -201,5 +201,28 @@
                 length="8927083"
                 type="application/octet-stream" />
         </item>
+            <item>
+            <title>0.11.13-fire.9.2</title>
+            <pubDate>Fri, 29 May 2026 13:00:00 +0000</pubDate>
+            <sparkle:version>1138</sparkle:version>
+            <sparkle:shortVersionString>0.11.13-fire.9.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>fire.9.2 — AI Quotas adds Antigravity</h2>
+                <p>AI Quotas now tracks <strong>Antigravity</strong> (Google's Gemini-backed coding tool) alongside Codex, Claude, Gemini, and Ollama. The combined item reads e.g.:</p>
+                <p><code>AI Cx99 Cl73 Gm? Ag100 Ol100</code></p>
+                <p>The dropdown breaks Antigravity down by model (Gemini 2.5/3 Pro, Flash, etc.).</p>
+                <ul>
+                    <li>New providers added in an update now appear automatically (provider selection persists the disabled set, so the default stays "all on").</li>
+                    <li>Still off by default, still local-only.</li>
+                </ul>
+                <p><a href="https://github.com/pdurlej/Ice/releases/tag/v0.11.13-fire.9.2">Full release notes on GitHub</a></p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/pdurlej/Ice/releases/download/v0.11.13-fire.9.2/Ice-v0.11.13-fire.9.2.dmg"
+                sparkle:edSignature="QCzw1rKw+OJjI+h20kTIS7t7K6BqsobQ8EnR2hwPTotg9lrw50Ka7zRx14HTLwXuvvmuTYsx6ITmDupQdxhJAA=="
+                length="8953110"
+                type="application/octet-stream" />
+        </item>
     </channel>
 </rss>
