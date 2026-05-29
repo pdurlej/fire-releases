@@ -293,5 +293,27 @@
                 length="8958738"
                 type="application/octet-stream" />
         </item>
+            <item>
+            <title>0.11.13-fire.9.7</title>
+            <pubDate>Fri, 29 May 2026 19:06:56 +0000</pubDate>
+            <sparkle:version>1143</sparkle:version>
+            <sparkle:shortVersionString>0.11.13-fire.9.7</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>fire.9.7 — AI Quotas sits left of the system icons</h2>
+                <ul>
+                    <li>The AI Quotas readout now sits to the LEFT of the macOS system icons (Spotlight, Control Center, clock), tucked just inside Ice's control item — instead of being wedged in between them on the right.</li>
+                    <li>You can now drag it elsewhere and it stays put. Earlier builds snapped it back to the far right on every launch; only an off-screen position now self-heals.</li>
+                    <li>Fixed an intermittent "?" for Codex caused by a stdout read race when shelling out to the CodexBar CLI.</li>
+                </ul>
+                <p>Still off by default, still local-only.</p>
+                <p><a href="https://github.com/pdurlej/Ice/releases/tag/v0.11.13-fire.9.7">Full release notes on GitHub</a></p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/pdurlej/Ice/releases/download/v0.11.13-fire.9.7/Ice-v0.11.13-fire.9.7.dmg"
+                sparkle:edSignature="5iRSAXB8HGoPtdTc73yEaZp9mmwy8F2dW3CGfnb9I1XpgiYzql6SeJ7uV9N27Xcv/u27OEduXDc2DonDSySkDQ=="
+                length="8960943"
+                type="application/octet-stream" />
+        </item>
     </channel>
 </rss>
