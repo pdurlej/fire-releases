@@ -339,5 +339,28 @@
                 length="8974291"
                 type="application/octet-stream" />
         </item>
+            <item>
+            <title>0.11.13-fire.9.9</title>
+            <pubDate>Mon, 08 Jun 2026 07:39:22 +0000</pubDate>
+            <sparkle:version>1145</sparkle:version>
+            <sparkle:shortVersionString>0.11.13-fire.9.9</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>fire.9.9 — no more freezes when the hidden bar appears</h2>
+                <p>Fixes an issue where Fire could freeze for a couple of seconds (a brief "beachball") whenever the IceBar — the bar that shows your hidden menu bar items — appeared, moved, or refreshed.</p>
+                <ul>
+                    <li>The IceBar tints itself to match your desktop by capturing the screen behind it. That capture was running on the main thread; on macOS 26 it could block for seconds and freeze the whole app.</li>
+                    <li>Now the capture runs off the main thread, so Fire stays responsive.</li>
+                    <li>Found and confirmed via Sentry crash/hang reports — thank you to everyone with diagnostics enabled.</li>
+                </ul>
+                <p>No feature changes — just smoother.</p>
+                <p><a href="https://github.com/pdurlej/Ice/releases/tag/v0.11.13-fire.9.9">Full release notes on GitHub</a></p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/pdurlej/Ice/releases/download/v0.11.13-fire.9.9/Ice-v0.11.13-fire.9.9.dmg"
+                sparkle:edSignature="8v29K/on7EVauRcQK6R9IjqTGHTu20yxZsDzflNXALnBO4xBLvg3w0kozmb9lFwywcNntHkWnYoqV2tIVel/CQ=="
+                length="8976838"
+                type="application/octet-stream" />
+        </item>
     </channel>
 </rss>
