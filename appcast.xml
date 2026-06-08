@@ -362,5 +362,29 @@
                 length="8976838"
                 type="application/octet-stream" />
         </item>
+            <item>
+            <title>0.11.13-fire.10.0</title>
+            <pubDate>Mon, 08 Jun 2026 20:50:40 +0000</pubDate>
+            <sparkle:version>1146</sparkle:version>
+            <sparkle:shortVersionString>0.11.13-fire.10.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>fire.10.0 — AI-Native Automations</h2>
+                <p>Ask an AI assistant connected to Fire (via MCP) to set up a menu-bar automation, approve it once, and it runs on its own.</p>
+                <ul>
+                    <li><strong>Automations</strong> rearrange your menu bar for you when something happens: an app comes to the front, your battery runs low, or a weekly time window begins.</li>
+                    <li>You approve each automation once, in a Fire prompt that spells out exactly what it will do. Approval is bound to those exact items and that destination — change anything and Fire asks again.</li>
+                    <li>Manage everything in the new <strong>Settings &#8203;&#9656; Automations</strong> tab: enable/disable, see when each last ran, delete with a confirm, or disable all at once.</li>
+                    <li>Created through three new MCP tools — <code>set_trigger</code>, <code>list_triggers</code>, <code>remove_trigger</code> — so any MCP client can wire them up.</li>
+                </ul>
+                <p>Built on a hardened security model: a trigger is a sealed, user-approved capability, never a stored command, and every menu-bar change flows through one coordinator.</p>
+                <p><a href="https://github.com/pdurlej/Ice/releases/tag/v0.11.13-fire.10.0">Full release notes on GitHub</a></p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/pdurlej/Ice/releases/download/v0.11.13-fire.10.0/Ice-v0.11.13-fire.10.0.dmg"
+                sparkle:edSignature="kj5Q9XZK3M5e6u7TRS1/uevlepJBcFHv/TNMmTH3lMrl0TGRljeb9znuci0ov3kc3MxFxw0pVZWZlFsS8J1dCA=="
+                length="9364040"
+                type="application/octet-stream" />
+        </item>
     </channel>
 </rss>
