@@ -408,5 +408,29 @@
                 length="9364124"
                 type="application/octet-stream" />
         </item>
+            <item>
+            <title>0.11.13-fire.10.2</title>
+            <pubDate>Wed, 10 Jun 2026 18:49:21 +0000</pubDate>
+            <sparkle:version>1148</sparkle:version>
+            <sparkle:shortVersionString>0.11.13-fire.10.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>fire.10.2 — audit pack: faster, leaner, harder to fool</h2>
+                <p>A full code audit of the fork, shipped as one release.</p>
+                <ul>
+                    <li><strong>Two more freeze classes fixed.</strong> Checking for AI-assistant requests used to touch the disk on the main thread five times a second — under disk pressure that could briefly freeze the app (one user hit it; thank you, diagnostics senders). That whole mechanism is gone. Also, a stuck usage-CLI can no longer freeze the AI Quotas item forever.</li>
+                    <li><strong>Internal messaging hardened.</strong> AI-assistant requests now travel over authenticated system messaging (XPC, same-developer peer check) instead of files on disk. Other software on your Mac can no longer inject menu-bar commands or fake their results. Consent prompts stay exactly as they were — now as a second line of defense. Bonus: two consent prompts can no longer appear on top of each other.</li>
+                    <li><strong>Automations re-prove their approval at the moment they run</strong>, not just when scheduled.</li>
+                    <li><strong>Leaner:</strong> over 700 lines of dead code removed; the IceBar color-matching pipeline now does all of its image work off the main thread.</li>
+                    <li>Docs refreshed: all 10 MCP tools (including automations) are now documented.</li>
+                </ul>
+                <p><a href="https://github.com/pdurlej/Ice/releases/tag/v0.11.13-fire.10.2">Full release notes on GitHub</a></p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/pdurlej/Ice/releases/download/v0.11.13-fire.10.2/Ice-v0.11.13-fire.10.2.dmg"
+                sparkle:edSignature="EE8A/Rs/5j70L9d1M4dcAUcpHxK5TyuSwtI+KCGJoE1jUgu1tN47m6uRJTWyLFVWoz/HnInqA6mPCD3CvVv4DQ=="
+                length="9489607"
+                type="application/octet-stream" />
+        </item>
     </channel>
 </rss>
