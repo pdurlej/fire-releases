@@ -386,5 +386,27 @@
                 length="9364040"
                 type="application/octet-stream" />
         </item>
+            <item>
+            <title>0.11.13-fire.10.1</title>
+            <pubDate>Wed, 10 Jun 2026 17:47:02 +0000</pubDate>
+            <sparkle:version>1147</sparkle:version>
+            <sparkle:shortVersionString>0.11.13-fire.10.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>fire.10.1 — the freeze fix, finished</h2>
+                <p>fire.9.9 promised an end to the brief freezes when the hidden-items bar appears. That fix turned out to be incomplete — it moved the screen capture off the main thread, but on macOS 26 the expensive pixel fetch still happened later, on the main thread, when the captured image was first used. Crash reports (thank you, diagnostics senders!) showed the hang was still occurring on fire.10.0.</p>
+                <ul>
+                    <li>The captured image is now fully rasterized on a background thread before the app ever touches it.</li>
+                    <li>If that ever fails, Fire keeps the previous good image instead of risking a freeze.</li>
+                </ul>
+                <p>No feature changes. If you saw a beachball when the bar popped up — this is the one.</p>
+                <p><a href="https://github.com/pdurlej/Ice/releases/tag/v0.11.13-fire.10.1">Full release notes on GitHub</a></p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/pdurlej/Ice/releases/download/v0.11.13-fire.10.1/Ice-v0.11.13-fire.10.1.dmg"
+                sparkle:edSignature="nGvRJjtmRSDpCzqEPC5eD/O/XcjFc/H09iLSee4TuHcNWN1D2KYq6wYk7G3Nw6CGcYxo9DgQT2OWnf19w15GAg=="
+                length="9364124"
+                type="application/octet-stream" />
+        </item>
     </channel>
 </rss>
