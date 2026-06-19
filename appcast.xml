@@ -456,5 +456,28 @@
                 length="9512267"
                 type="application/octet-stream" />
         </item>
+            <item>
+            <title>0.11.13-fire.10.4</title>
+            <pubDate>Fri, 19 Jun 2026 11:28:52 +0000</pubDate>
+            <sparkle:version>1150</sparkle:version>
+            <sparkle:shortVersionString>0.11.13-fire.10.4</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>fire.10.4 — your settings tell the truth, and fewer freezes</h2>
+                <p>A trust + stability release.</p>
+                <ul>
+                    <li><strong>The MCP switches now actually do something.</strong> "Enable MCP server" and "Allow write operations" in Settings &#8594; Advanced used to be decorative — the server answered either way. Now they're real: turn the server off and AI assistants can't reach your menu bar at all; leave writes off and they can look but not touch.</li>
+                    <li><strong>Fewer freezes when revealing hidden icons.</strong> Clicking to expand a hidden item could briefly hang the app while it asked the window server which space each icon was on — on the main thread, and worse while another menu bar manager was running. That query now runs off the main thread.</li>
+                    <li><strong>Cleaner freeze reports.</strong> Harmless "waiting on a dialog" reports (like the "you're up to date" box left open) no longer drown out real freezes.</li>
+                </ul>
+                <p>Existing setups are unchanged — if you were using the MCP integration it keeps working. New installs start with it off (opt-in).</p>
+                <p><a href="https://github.com/pdurlej/fire-from-ice/releases/tag/v0.11.13-fire.10.4">Full release notes on GitHub</a></p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/pdurlej/fire-from-ice/releases/download/v0.11.13-fire.10.4/Ice-v0.11.13-fire.10.4.dmg"
+                sparkle:edSignature="Sin723GyQyish1MFfm28RYoCfZ66fn73Q0vKmwBrQKCkpHW38Zy38Vm5+2U5bb5MlOyg8G7VHCPDb0lJhgUbAg=="
+                length="9540512"
+                type="application/octet-stream" />
+        </item>
     </channel>
 </rss>
