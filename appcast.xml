@@ -432,5 +432,29 @@
                 length="9489607"
                 type="application/octet-stream" />
         </item>
+            <item>
+            <title>0.11.13-fire.10.3</title>
+            <pubDate>Fri, 19 Jun 2026 00:42:19 +0000</pubDate>
+            <sparkle:version>1149</sparkle:version>
+            <sparkle:shortVersionString>0.11.13-fire.10.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>fire.10.3 — safer automations, under the hood</h2>
+                <p>A foundation + safety release. No new features — this is about making the AI automation surface trustworthy and the app's internals tested.</p>
+                <ul>
+                    <li><strong>Automations stop drifting.</strong> A recurring multi-day schedule could silently stop working after a restart; fixed.</li>
+                    <li><strong>The approval prompt can't be faked.</strong> When an AI assistant proposes a menu-bar change, the name and app id it provides are now strictly validated, so they can't sneak hidden or misleading text into what you're approving.</li>
+                    <li><strong>Automations remember their cooldown across restarts</strong> and no longer re-fire on every login.</li>
+                    <li>First-ever automated test suite for the security-critical logic, and crash/freeze reports now point at the exact code (developer symbols), so future issues get fixed faster.</li>
+                </ul>
+                <p>If you'd created any automations, you'll be asked to approve them once more after updating (the approval format changed) — one click in Settings → Automations.</p>
+                <p><a href="https://github.com/pdurlej/fire-from-ice/releases/tag/v0.11.13-fire.10.3">Full release notes on GitHub</a></p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/pdurlej/fire-from-ice/releases/download/v0.11.13-fire.10.3/Ice-v0.11.13-fire.10.3.dmg"
+                sparkle:edSignature="moxh3G7v3yZUmQ5jXV4fDb9ANUhYeKKyCd04Qpq1iq4dNnr1EVYyQogOZBHvacRoWVcCCzYXqsG0kODcp15TDA=="
+                length="9512267"
+                type="application/octet-stream" />
+        </item>
     </channel>
 </rss>
