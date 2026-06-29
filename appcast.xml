@@ -479,5 +479,25 @@
                 length="9540512"
                 type="application/octet-stream" />
         </item>
+            <item>
+            <title>0.11.13-fire.10.4.1</title>
+            <pubDate>Mon, 29 Jun 2026 20:22:17 +0000</pubDate>
+            <sparkle:version>1151</sparkle:version>
+            <sparkle:shortVersionString>0.11.13-fire.10.4.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>fire.10.4.1 — fewer freezes</h2>
+                <p>A stability hotfix. fire.10.4's developer symbols pinpointed exactly where the app could briefly freeze on macOS 26, and this release moves that work off the main thread.</p>
+                <ul>
+                    <li><strong>No more short freezes while revealing or rearranging menu bar icons.</strong> Several spots asked the window server for icon positions and on-screen window counts on the main thread; under load — especially with another menu bar manager also running — that could lock the UI for a few seconds. Those queries now run in the background.</li>
+                </ul>
+                <p><a href="https://github.com/pdurlej/fire-from-ice/releases/tag/v0.11.13-fire.10.4.1">Full release notes on GitHub</a></p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/pdurlej/fire-from-ice/releases/download/v0.11.13-fire.10.4.1/Ice-v0.11.13-fire.10.4.1.dmg"
+                sparkle:edSignature="c7TgKOOLZIn23SNaegIG4n/MAPw2JM/VpAhm+qIU6d6G9+FI+/IdkamWUdZtnZ/WyvU2jTO+n6k7Iz17HtmTCg=="
+                length="9449554"
+                type="application/octet-stream" />
+        </item>
     </channel>
 </rss>
