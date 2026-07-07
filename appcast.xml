@@ -499,5 +499,21 @@
                 length="9449554"
                 type="application/octet-stream" />
         </item>
+            <item>
+            <title>0.11.13-fire.10.4.2</title>
+            <pubDate>Tue, 07 Jul 2026 22:31:02 +0000</pubDate>
+            <sparkle:version>1152</sparkle:version>
+            <sparkle:shortVersionString>0.11.13-fire.10.4.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>fire.10.4.2 — fewer freezes</h2>
+                <p>A small stability hotfix. Fire's event handling used to ask the window server whether its event tap was still active on <em>every</em> event it saw — including mouse moves. Under load (especially with another menu bar manager also running) that could briefly lock the UI. It now tracks that state locally, with no window-server round trip.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/pdurlej/fire-from-ice/releases/download/v0.11.13-fire.10.4.2/Ice-v0.11.13-fire.10.4.2.dmg"
+                sparkle:edSignature="++Rpi71iKKd9dhYwd78xqAff5YuKtNbhAPHDlosbhxDC8upX81H+2PoY99bTHX+mbDCjcg5Xc5bTRWnvd7hJCw=="
+                length="9555583"
+                type="application/octet-stream" />
+        </item>
     </channel>
 </rss>
