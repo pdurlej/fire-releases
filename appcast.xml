@@ -515,5 +515,25 @@
                 length="9555583"
                 type="application/octet-stream" />
         </item>
+            <item>
+            <title>0.11.13-fire.10.5</title>
+            <pubDate>Wed, 08 Jul 2026 07:19:38 +0000</pubDate>
+            <sparkle:version>1153</sparkle:version>
+            <sparkle:shortVersionString>0.11.13-fire.10.5</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>fire.10.5 — a security fix under the hood</h2>
+                <p>A hardening release with no user-facing changes.</p>
+                <ul>
+                    <li><strong>The MCP kill-switch now really covers everything.</strong> An internal helper service could still hand out your menu-bar layout to a local process even with the MCP server turned off. That path is closed — the layout is only ever served through the gated MCP backend now.</li>
+                    <li>Build-pipeline hardening (pinned CI dependencies) so releases stay tamper-resistant.</li>
+                </ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/pdurlej/fire-from-ice/releases/download/v0.11.13-fire.10.5/Ice-v0.11.13-fire.10.5.dmg"
+                sparkle:edSignature="WrHZFpBgXayi8dbpZvC6LCqm3ieFk1+HDI1zyayj/1dq8RHJiMhSDa4KvJuxDiAuVjsn/j9gDDJ6nlaV4YKMCw=="
+                length="9408347"
+                type="application/octet-stream" />
+        </item>
     </channel>
 </rss>
