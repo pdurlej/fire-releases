@@ -557,5 +557,27 @@
                 length="9511501"
                 type="application/octet-stream" />
         </item>
+            <item>
+            <title>0.11.13-fire.10.7.2</title>
+            <pubDate>Sun, 12 Jul 2026 09:16:14 +0000</pubDate>
+            <sparkle:version>1157</sparkle:version>
+            <sparkle:shortVersionString>0.11.13-fire.10.7.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>Fire 10.7.2</h2>
+<p>This release makes hidden menu bar items respond reliably when switching between apps.</p>
+<ul>
+  <li>Prevents hidden icons from briefly flashing over File, Edit, and other application menus.</li>
+  <li>Makes hover, click, and secondary-click reveal actions respond immediately after an app switch.</li>
+  <li>Moves expensive application-menu accessibility work away from the main thread to reduce hangs.</li>
+  <li>Hardens signed MCP/XPC peer verification.</li>
+</ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/pdurlej/fire-from-ice/releases/download/v0.11.13-fire.10.7.2/Ice-v0.11.13-fire.10.7.2.dmg"
+                sparkle:edSignature="8DbbezTrjb2mpgf4UHGnO7ezgvA4as0WQ1BJa5iiLnEoQYrp1nVWIXgsR0S9T1PuQ2YERja2uuLZU4vSTEv2Dg=="
+                length="9433949"
+                type="application/octet-stream" />
+        </item>
     </channel>
 </rss>
