@@ -579,5 +579,21 @@
                 length="9433949"
                 type="application/octet-stream" />
         </item>
+            <item>
+            <title>0.11.13-fire.10.7.3</title>
+            <pubDate>Mon, 13 Jul 2026 06:56:03 +0000</pubDate>
+            <sparkle:version>1158</sparkle:version>
+            <sparkle:shortVersionString>0.11.13-fire.10.7.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <p>Fire 10.7.3 makes the MCP response contract honest: mutation results no longer advertise an unavailable undo token, while preserving wire compatibility with older Fire components.</p>
+<p>See the <a href="https://github.com/pdurlej/fire-from-ice/releases/tag/v0.11.13-fire.10.7.3">full release notes on GitHub</a>.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/pdurlej/fire-from-ice/releases/download/v0.11.13-fire.10.7.3/Ice-v0.11.13-fire.10.7.3.dmg"
+                sparkle:edSignature="C5857G+g1veHTcNsWWmd5ZbPuGdKVZU2QM2yAhwA5c++T80MXe88f61hZtKTahnDK9BvV7kBscsv+2LJCwKqCg=="
+                length="9434664"
+                type="application/octet-stream" />
+        </item>
     </channel>
 </rss>
